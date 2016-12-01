@@ -1,0 +1,5 @@
+El proyecto web está hecho en visual studio 2010.
+Se requiere inciarlo en esa versión para que no hayan problemas de compatibilidad.
+Una vez dentro si se quiere acceder a la vista de administrador, se puede introduciendo:
+nombre de usuario: admin
+contraseña: admin

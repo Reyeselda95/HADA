@@ -1,0 +1,38 @@
+#u260
+{
+	background-color: transparent;
+	position: relative;
+}
+
+#u271-4,#u270-4,#u269-4,#u268-4
+{
+	background-color: transparent;
+	text-align: center;
+	color: #FFFFFF;
+	position: relative;
+}
+
+#u271,#u270,#u269,#u268
+{
+	color: #FFFFFF;
+}
+
+#u262
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #A70000;
+	border-radius: 80px;
+}
+
+#u262_align_to_page,#u263-4,#u264-4,#u265-4,#u266-4,#u267-4
+{
+	position: relative;
+}
+
+#u263-4_img,#u264-4_img,#u265-4_img,#u266-4_img,#u267-4_img
+{
+	display: block;
+	vertical-align: top;
+}
+

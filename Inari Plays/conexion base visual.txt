@@ -1,0 +1,13 @@
+﻿- En primer lugar asegúrate que haber ejecutado el script "LoginSQLMode.exe" en tu máquina, ya que sino no podrás hacerlo.
+
+- Después tienes que crear un proyecto de OOH4RIA, compilarlo, asegurarte de que no tiene errores, abrirlo con Visual Studio y darle a ejecutar (play). Te saldrá una consola preguntando que si quieres crear la base de datos, le dices que sí, y que si quieres rellenarla con datos, también que sí.
+
+- A continuación vamos a comprobar que se haya creado la base de datos. Para esto, en Visual Studio, vas al menú "View -> Server Explorer". Se abrirá una columna donde tenéis que apretar al botón "add database connection" y rellenar los datos:
+
+Server name: (local)\sqlexpress
+Activad opción "Use SQL Server Authentication"
+User name: nhibernateUser
+Passwd: nhibernatePass
+Activad "select or enter a database name" y seleccionad la BD, que tendrá el nombre "nombreProy+Gen+Nhibernate"
+Test Connection (debe decir que ha sido successful)
+Un saludo

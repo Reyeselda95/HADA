@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %></title>
+    <asp:PlaceHolder runat="server">     
+          <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>  
+    <webopt:BundleReference runat="server" Path="~/Content/Site.css" /> 
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+     <link href="~/Default.aspx" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form runat="server">
+    <asp:ScriptManager runat="server">
+        <Scripts>
+            <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+            <%--Framework Scripts--%>
+            
+            <asp:ScriptReference Name="MsAjaxBundle" />
+            <asp:ScriptReference Name="jquery" />
+            <asp:ScriptReference Name="jquery.ui.combined" />
+            <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+            <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+            <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+            <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+            <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+            <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+            <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+            <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+            <asp:ScriptReference Name="WebFormsBundle" />
+            <%--Site Scripts--%>
+
+        </Scripts>
+    </asp:ScriptManager>
+    <header>
+        <div class="header">
+    
+        </div>
+         <div class="inicio">
+              <ul>
+                 <li>
+                    <asp:HyperLink ID="cesta" runat="server" NavigateUrl="~/Cesta.aspx">Mi cesta</asp:HyperLink>
+                </li>
+                 <li>
+                    <asp:HyperLink ID="sesion" runat="server" NavigateUrl="~/Account/Login.aspx">Iniciar sesión</asp:HyperLink>
+                </li>
+               </ul>
+            </div>
+        <div class="menu">
+           
+            <ul>
+                <li>
+                    <asp:Hyperlink ID ="inicio" runat="server" NavigateUrl="~/Inicio.aspx">Inicio</asp:Hyperlink>
+                </li>
+                <li>
+                    <asp:Hyperlink ID ="videogjuego" runat="server" NavigateUrl="~/Videojuegos.aspx">Videojuegos</asp:Hyperlink>
+                </li>
+                <li>
+                    <asp:Hyperlink ID ="merchandising" runat="server" NavigateUrl="~/Merchan.aspx">Merchandising</asp:Hyperlink>
+                </li>
+                <li>
+                    <asp:Hyperlink ID ="musica" runat="server" NavigateUrl="~/Musica.aspx">Música</asp:Hyperlink>
+                </li>
+                <li>
+                    <asp:Hyperlink ID ="pelicula" runat="server" NavigateUrl="~/Pelis.aspx">Películas</asp:Hyperlink>
+                </li>
+                <li>
+                    <asp:Hyperlink ID ="contacto" runat="server" NavigateUrl="~/Contact.aspx">Contacto</asp:Hyperlink>
+                </li>
+
+            </ul>
+         </div>
+    </header>
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+        
+        <section class="slide">
+            <asp:ContentPlaceHolder runat="server" ID="SlideContent"/>
+        </section>
+        
+    </div>
+    <footer>
+        <div class="abajo">
+            <div class="float-left">
+                
+                <p style="color: #FFFFFF">&copy; <%: DateTime.Now.Year %> - INARI PLAYS</p>
+
+            </div>
+        </div>
+        <div class="admin">
+                 <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Account/LoginAdmin.aspx" ForeColor="White">Iniciar sesión como administrador</asp:HyperLink>
+            </div>
+    </footer>
+    </form>
+</body>
+</html>

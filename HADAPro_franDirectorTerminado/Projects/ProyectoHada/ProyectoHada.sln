@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ProyectoHada", "..\..\WebSites\ProyectoHada\", "{79E35EF7-4362-4DDC-89AE-B181BA0A0477}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{662463FA-BFF6-423B-B13E-F67F5814400F}|ProyectoHadaLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/ProyectoHada"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\ProyectoHada\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ProyectoHada\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ProyectoHada"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\ProyectoHada\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ProyectoHada\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1281"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoHadaLibrary", "..\videoclub_ok\ProyectoHadaLibrary\ProyectoHadaLibrary.csproj", "{662463FA-BFF6-423B-B13E-F67F5814400F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79E35EF7-4362-4DDC-89AE-B181BA0A0477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E35EF7-4362-4DDC-89AE-B181BA0A0477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E35EF7-4362-4DDC-89AE-B181BA0A0477}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{79E35EF7-4362-4DDC-89AE-B181BA0A0477}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{79E35EF7-4362-4DDC-89AE-B181BA0A0477}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{79E35EF7-4362-4DDC-89AE-B181BA0A0477}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E35EF7-4362-4DDC-89AE-B181BA0A0477}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{79E35EF7-4362-4DDC-89AE-B181BA0A0477}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{79E35EF7-4362-4DDC-89AE-B181BA0A0477}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{79E35EF7-4362-4DDC-89AE-B181BA0A0477}.Release|x86.ActiveCfg = Debug|Any CPU
+		{662463FA-BFF6-423B-B13E-F67F5814400F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662463FA-BFF6-423B-B13E-F67F5814400F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662463FA-BFF6-423B-B13E-F67F5814400F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{662463FA-BFF6-423B-B13E-F67F5814400F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{662463FA-BFF6-423B-B13E-F67F5814400F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{662463FA-BFF6-423B-B13E-F67F5814400F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{662463FA-BFF6-423B-B13E-F67F5814400F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{662463FA-BFF6-423B-B13E-F67F5814400F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{662463FA-BFF6-423B-B13E-F67F5814400F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{662463FA-BFF6-423B-B13E-F67F5814400F}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

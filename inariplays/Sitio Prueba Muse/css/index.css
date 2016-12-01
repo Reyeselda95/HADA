@@ -1,0 +1,178 @@
+.version.index /* version checker */
+{
+	color: #000010;
+	background-color: #AA7C58;
+}
+
+.html
+{
+	background: #FFFFFF url("../images/base%201.jpg") repeat left top scroll;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 499.5210641058653px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	padding-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	margin-top: -35px;
+	padding-bottom: 140px;
+	width: 0.01px;
+}
+
+#pu260
+{
+	width: 0.01px;
+	margin-left: -106px;
+}
+
+#u260
+{
+	z-index: 2;
+	width: 674px;
+	margin-right: -10000px;
+}
+
+#u271-4
+{
+	z-index: 37;
+	width: 125px;
+	min-height: 24px;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 833px;
+}
+
+#u270-4
+{
+	z-index: 33;
+	width: 75px;
+	min-height: 24px;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 958px;
+}
+
+#u269-4
+{
+	z-index: 29;
+	width: 12px;
+	min-height: 24px;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 1033px;
+}
+
+#u268-4
+{
+	z-index: 25;
+	width: 100px;
+	min-height: 24px;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 1045px;
+}
+
+#u262
+{
+	z-index: 4;
+	min-height: 31px;
+}
+
+#u262_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	left: -100px;
+}
+
+#u263-4
+{
+	z-index: 5;
+	width: 142px;
+	margin-right: -10000px;
+	left: 12px;
+}
+
+#u264-4
+{
+	z-index: 9;
+	width: 213px;
+	margin-right: -10000px;
+	left: 180px;
+}
+
+#u265-4
+{
+	z-index: 13;
+	width: 242px;
+	margin-right: -10000px;
+	left: 426px;
+}
+
+#u266-4
+{
+	z-index: 17;
+	width: 203px;
+	margin-right: -10000px;
+	left: 693px;
+}
+
+#u267-4
+{
+	z-index: 21;
+	width: 170px;
+	margin-right: -10000px;
+	left: 946px;
+}
+
+#u262-bw
+{
+	z-index: 4;
+	min-height: 31px;
+	margin-top: 6px;
+}
+
+#u300-4
+{
+	z-index: 41;
+	width: 479px;
+	min-height: 87px;
+	background-color: transparent;
+	font-size: 26px;
+	color: #FFFFFF;
+	line-height: 31px;
+	margin-left: 216px;
+	margin-top: 109px;
+	position: relative;
+}
+
+#u300
+{
+	font-size: 26px;
+}
+
+body
+{
+	position: relative;
+	min-width: 960px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

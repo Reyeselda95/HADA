@@ -1,0 +1,5 @@
+Para ejecutar la aplicacion despues de compilar, recuerda que debes
+dar un valor a la variable de entorno "LD_LIBRARY_PATH" de manera que
+el enlazador dinámico encuentre la biblioteca, por ejemplo asi:
+
+LD_LIBRARY_PATH=. comp-decomp-driver -c cccccaaaassas

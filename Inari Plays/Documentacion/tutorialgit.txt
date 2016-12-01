@@ -1,0 +1,46 @@
+1º instalar con la opcion de escritorio marcada
+
+2º click derecho en escritorio y le damos a git bash
+
+3º escribimos: git clone inariplays@git.eps.us.es:inariplays
+
+4º contraseña: inari.  (con el punto)
+
+5º escribir yes cuando lo pida
+
+6º git config --global user.name "JOAQUIN VASALO VICEDO"   (poner tu nombre con mayus)
+
+7º git config --global user.email "jvv7@alu.ua.es"   (poner tu correo)
+
+
+para subir algo
+
+1º cd inariplays    (en el escritorio)
+
+2º git add Images/la cosa que quieras subir.png o cualquier extension
+
+3º git status  (para ver el estado)
+
+4º git pull
+
+5º git commit -a -m "descripcion del commit y nombre"
+
+6º git log para ver los commits totales
+
+7º git push origin master
+
+
+para actualizar la carpeta con los nuevos commit
+
+1º git pull
+
+2º pulsar q para salir de la pantalla de commit 
+
+
+para trabajar con otra rama 
+
+1º git branch ximo
+
+2º git checkout ximo
+
+3º git branch

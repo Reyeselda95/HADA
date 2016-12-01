@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="InariPlaysGenNHibernate"
+		                   namespace="InariPlaysGenNHibernate.EN.Prueba">
+			<class name="PedidoEN" table="[Pedido]">
+						<id name="PedidoId" column="[pedidoId]"/>
+					<property name="Fecha" type="date"> 
+						<column name="[fecha]"  not-null="true"/>
+					</property>
+					<property name="Direccion" type="string"> 
+						<column name="[direccion]"  not-null="true"/>
+					</property>
+					<property name="Localidad" type="string"> 
+						<column name="[localidad]"  not-null="true"/>
+					</property>
+					<property name="Provincia" type="string"> 
+						<column name="[provincia]"  not-null="true"/>
+					</property>
+					<property name="CodigoPostal" type="integer"> 
+						<column name="[codigoPostal]"  not-null="true"/>
+					</property>
+					<property name="TipoPago" type="string"> 
+						<column name="[tipoPago]"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Cliente" class="InariPlaysGenNHibernate.EN.Prueba.ClienteEN" >	
+								<column name="[FK_NIF_idCliente]"/>
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="LiniaPedido" cascade="delete">
+							<key>
+								<column name="[FK_pedidoId_idPedido]"/>
+					      	</key>
+							<one-to-many class="InariPlaysGenNHibernate.EN.Prueba.LiniaPedidoEN"/>
+					    </bag>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		  </class>
+		  
+		  <query name="PedidoENReadAllHQL">from PedidoEN</query>
+		</hibernate-mapping>
+	

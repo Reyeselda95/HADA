@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="InariPlaysGenNHibernate"
+		                   namespace="InariPlaysGenNHibernate.EN.Prueba">
+			<class name="CestaEN" table="[Cesta]">
+						<id name="Iden" column="[Iden]"/>
+					<property name="Fecha" type="date"> 
+						<column name="[fecha]"  not-null="true"/>
+					</property>
+			
+			
+			
+		  			
+						<many-to-one name="Cliente" class="InariPlaysGenNHibernate.EN.Prueba.ClienteEN" >	
+								<column name="[FK_NIF_idCliente]"/>
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="Producto" table="[producto_cesta]" inverse="true" >
+							<key>
+									<column name="[FK_Iden_idCesta]"/>
+							</key>
+      						<many-to-many class="InariPlaysGenNHibernate.EN.Prueba.ProductoEN">
+									<column name="[FK_productoId_idProducto]"/>
+      						</many-to-many>
+    					</bag>
+					
+					
+					
+					
+		
+		  </class>
+		  
+		  <query name="CestaENReadAllHQL">from CestaEN</query>
+		</hibernate-mapping>
+	

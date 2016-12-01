@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://falconmasters.com/demos/slideshow/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Slideshow</title>
+	<link rel="stylesheet" href="http://falconmasters.com/demos/slideshow/estilos.css">
+	<link rel="stylesheet" href="http://falconmasters.com/demos/slideshow/fonts.css">
+<style type="text/css"></style></head>
+<body>
+	
+	<div class="main">
+		<div class="slides" style="overflow: hidden;">
+			<div class="slidesjs-container" style="overflow: hidden; position: relative; width: 1000px; height: 561.702127659575px;"><div class="slidesjs-control" style="position: relative; left: 0px; width: 1000px; height: 561.702127659575px;"><img src="./Slideshow_files/1" alt="" class="slidesjs-slide" slidesjs-index="0" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 10; -webkit-backface-visibility: hidden; display: block;"><img src="./Slideshow_files/2" alt="" class="slidesjs-slide" slidesjs-index="1" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; -webkit-backface-visibility: hidden;"><img src="./Slideshow_files/3" alt="" class="slidesjs-slide" slidesjs-index="2" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; -webkit-backface-visibility: hidden;"></div></div>
+			
+			
+		<a class="slidesjs-previous slidesjs-navigation icon-arrow-right5" href="http://falconmasters.com/demos/slideshow/#" title=""></a><a class="slidesjs-next slidesjs-navigation icon-arrow-left5" href="http://falconmasters.com/demos/slideshow/#" title=""></a><a class="slidesjs-play slidesjs-navigation icon-play" href="http://falconmasters.com/demos/slideshow/#" title="" style="display: block;"></a><a class="slidesjs-stop slidesjs-navigation icon-pause" href="http://falconmasters.com/demos/slideshow/#" title="" style="display: none;"></a><ul class="slidesjs-pagination"><li class="slidesjs-pagination-item"><a href="http://falconmasters.com/demos/slideshow/#" data-slidesjs-item="0" class="active">1</a></li><li class="slidesjs-pagination-item"><a href="http://falconmasters.com/demos/slideshow/#" data-slidesjs-item="1" class="">2</a></li><li class="slidesjs-pagination-item"><a href="http://falconmasters.com/demos/slideshow/#" data-slidesjs-item="2" class="">3</a></li></ul></div>
+	</div>
+
+	<script src="./Slideshow_files/jquery-1.9.1.min.js"></script>
+	<script src="./Slideshow_files/jquery.slides.js"></script>
+	<script>
+
+	$(function(){
+  $(".slides").slidesjs({
+    play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "slide",
+        // [string] Can be either "slide" or "fade".
+      interval: 3000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+
+	</script>
+
+
+</body></html>

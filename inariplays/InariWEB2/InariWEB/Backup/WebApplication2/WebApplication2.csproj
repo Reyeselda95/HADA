@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A741D0B6-41BB-4E64-B59F-D46B4FEF03B3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication2</RootNamespace>
+    <AssemblyName>WebApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\LoginAdmin.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Administrador.aspx" />
+    <Content Include="App_Data\InariDatos.mdf" />
+    <Content Include="App_Data\InariDatos_log.ldf">
+      <DependentUpon>InariDatos.mdf</DependentUpon>
+    </Content>
+    <Content Include="Cesta.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="descmerchan.aspx" />
+    <Content Include="descmusic.aspx" />
+    <Content Include="descpeli.aspx" />
+    <Content Include="descvideo.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\arrows.png" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\blank.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\comprar.JPG" />
+    <Content Include="Images\figura.png" />
+    <Content Include="Images\grid.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\Inari Plays Logo con letras.png" />
+    <Content Include="Images\killers.png" />
+    <Content Include="Images\kingdom.png" />
+    <Content Include="Images\kingdommedio.png" />
+    <Content Include="Images\medio.png" />
+    <Content Include="Images\Merchan\assasins.jpg" />
+    <Content Include="Images\Merchan\assasins.png" />
+    <Content Include="Images\Merchan\bleach.jpg" />
+    <Content Include="Images\Merchan\bleach.png" />
+    <Content Include="Images\Merchan\chopper.jpg" />
+    <Content Include="Images\Merchan\chopper.png" />
+    <Content Include="Images\Merchan\darkside.jpg" />
+    <Content Include="Images\Merchan\darkside.png" />
+    <Content Include="Images\Merchan\diablo.jpg" />
+    <Content Include="Images\Merchan\diablo.png" />
+    <Content Include="Images\Merchan\diorama.jpg" />
+    <Content Include="Images\Merchan\diorama.png" />
+    <Content Include="Images\Merchan\dragon.jpg" />
+    <Content Include="Images\Merchan\dragon.png" />
+    <Content Include="Images\Merchan\eren.jpg" />
+    <Content Include="Images\Merchan\eren.png" />
+    <Content Include="Images\Merchan\felpudoanon.jpg" />
+    <Content Include="Images\Merchan\felpudoanon.png" />
+    <Content Include="Images\Merchan\gorragamer.jpg" />
+    <Content Include="Images\Merchan\gorragamer.png" />
+    <Content Include="Images\Merchan\ironman.jpg" />
+    <Content Include="Images\Merchan\ironman.png" />
+    <Content Include="Images\Merchan\jarratronos.jpg" />
+    <Content Include="Images\Merchan\jarratronos.png" />
+    <Content Include="Images\Merchan\llaverotronos.jpg" />
+    <Content Include="Images\Merchan\llaverotronos.png" />
+    <Content Include="Images\Merchan\luigi.jpg" />
+    <Content Include="Images\Merchan\luigi.png" />
+    <Content Include="Images\Merchan\lvlup.jpg" />
+    <Content Include="Images\Merchan\lvlup.png" />
+    <Content Include="Images\Merchan\manorey.jpg" />
+    <Content Include="Images\Merchan\manorey.png" />
+    <Content Include="Images\Merchan\minitifa.jpg" />
+    <Content Include="Images\Merchan\minitifa.png" />
+    <Content Include="Images\Merchan\pico.jpg" />
+    <Content Include="Images\Merchan\pico.png" />
+    <Content Include="Images\Merchan\pikachu.jpg" />
+    <Content Include="Images\Merchan\pikachu.png" />
+    <Content Include="Images\Merchan\roxas.jpg" />
+    <Content Include="Images\Merchan\roxas.png" />
+    <Content Include="Images\Merchan\sonic.jpg" />
+    <Content Include="Images\Merchan\sonic.png" />
+    <Content Include="Images\Merchan\spaceinvaders.jpg" />
+    <Content Include="Images\Merchan\spaceinvaders.png" />
+    <Content Include="Images\Merchan\tazaescult.jpg" />
+    <Content Include="Images\Merchan\tazaescult.png" />
+    <Content Include="Images\Merchan\tazamurallas.jpg" />
+    <Content Include="Images\Merchan\tazamurallas.png" />
+    <Content Include="Images\Merchan\tazatronos.jpg" />
+    <Content Include="Images\Merchan\tazatronos.png" />
+    <Content Include="Images\Merchan\tifa.jpg" />
+    <Content Include="Images\Merchan\tifa.png" />
+    <Content Include="Images\Merchan\totoro.jpg" />
+    <Content Include="Images\Merchan\totoro.png" />
+    <Content Include="Images\Merchan\trafalgar.jpg" />
+    <Content Include="Images\Merchan\trafalgar.png" />
+    <Content Include="Images\Merchan\vader.jpg" />
+    <Content Include="Images\Merchan\vader.png" />
+    <Content Include="Images\metal.png" />
+    <Content Include="Images\metalmedio.png" />
+    <Content Include="Images\Musica\az.jpg" />
+    <Content Include="Images\Musica\az.png" />
+    <Content Include="Images\Musica\believe.jpg" />
+    <Content Include="Images\Musica\believe.png" />
+    <Content Include="Images\Musica\enamel.jpg" />
+    <Content Include="Images\Musica\enamel.png" />
+    <Content Include="Images\Musica\hello.jpg" />
+    <Content Include="Images\Musica\hello.png" />
+    <Content Include="Images\Musica\hikaru.jpg" />
+    <Content Include="Images\Musica\hikaru.png" />
+    <Content Include="Images\Musica\izal.jpg" />
+    <Content Include="Images\Musica\izal.png" />
+    <Content Include="Images\Musica\kisetsu.jpg" />
+    <Content Include="Images\Musica\kisetsu.png" />
+    <Content Include="Images\Musica\melendi.jpg" />
+    <Content Include="Images\Musica\melendi.png" />
+    <Content Include="Images\Musica\muse.jpg" />
+    <Content Include="Images\Musica\muse.png" />
+    <Content Include="Images\Musica\nanoir.jpg" />
+    <Content Include="Images\Musica\nanoir.png" />
+    <Content Include="Images\Musica\orozco.jpg" />
+    <Content Include="Images\Musica\orozco.png" />
+    <Content Include="Images\Musica\second.jpg" />
+    <Content Include="Images\Musica\second.png" />
+    <Content Include="Images\Musica\Sirope.jpg" />
+    <Content Include="Images\Musica\Sirope.png" />
+    <Content Include="Images\Musica\Supersubmarina.jpeg" />
+    <Content Include="Images\Musica\Supersubmarina.png" />
+    <Content Include="Images\Musica\theblackkeys.jpg" />
+    <Content Include="Images\Musica\theblackkeys.png" />
+    <Content Include="Images\Musica\thekillers.jpeg" />
+    <Content Include="Images\Musica\thekillers.png" />
+    <Content Include="Images\Musica\thestrokes.jpg" />
+    <Content Include="Images\Musica\thestrokes.png" />
+    <Content Include="Images\Musica\tsubasa.jpg" />
+    <Content Include="Images\Musica\tsubasa.png" />
+    <Content Include="Images\Musica\unravel.jpg" />
+    <Content Include="Images\Musica\unravel.png" />
+    <Content Include="Images\niños.png" />
+    <Content Include="Images\niñosmedio.png" />
+    <Content Include="Images\oferta.png" />
+    <Content Include="Images\oferta2.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Images\oscuro.png" />
+    <Content Include="Images\Pelis\divergente.jpg" />
+    <Content Include="Images\Pelis\divergente.png" />
+    <Content Include="Images\Pelis\hero6.jpg" />
+    <Content Include="Images\Pelis\hero6.png" />
+    <Content Include="Images\Pelis\niños.png" />
+    <Content Include="Images\Pelis\niños2.png" />
+    <Content Include="Images\Pelis\sinsajo.png" />
+    <Content Include="Images\Pelis\sinsajo2.png" />
+    <Content Include="Images\Pelis\teoria-del-todo-peli.jpg" />
+    <Content Include="Images\Pelis\teoria-del-todo-peli.png" />
+    <Content Include="Images\Pelis\vengadores.jpg" />
+    <Content Include="Images\Pelis\vengadores.png" />
+    <Content Include="Images\sanz.png" />
+    <Content Include="Images\sinsajo.png" />
+    <Content Include="Images\sirope.png" />
+    <Content Include="Images\videojuegos\020687.jpg" />
+    <Content Include="Images\videojuegos\050000.jpg" />
+    <Content Include="Images\videojuegos\062804.jpg" />
+    <Content Include="Images\videojuegos\076996.jpg" />
+    <Content Include="Images\videojuegos\090587.jpg" />
+    <Content Include="Images\videojuegos\096145.jpg" />
+    <Content Include="Images\videojuegos\099193.jpg" />
+    <Content Include="Images\videojuegos\103350.jpg" />
+    <Content Include="Images\videojuegos\104332.jpg" />
+    <Content Include="Images\videojuegos\3d.png" />
+    <Content Include="Images\videojuegos\Barbie.png" />
+    <Content Include="Images\videojuegos\batman.png" />
+    <Content Include="Images\videojuegos\god.png" />
+    <Content Include="Images\videojuegos\guitar.png" />
+    <Content Include="Images\videojuegos\kingdom.png" />
+    <Content Include="Images\videojuegos\metal.png" />
+    <Content Include="Images\videojuegos\smash.png" />
+    <Content Include="Images\videojuegos\star.png" />
+    <Content Include="Inicio.aspx" />
+    <Content Include="Merchan.aspx" />
+    <Content Include="Musica.aspx" />
+    <Content Include="Pelis.aspx" />
+    <Content Include="Scripts\modernizr.custom.04022.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Videojuegos.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\LoginAdmin.aspx.cs">
+      <DependentUpon>LoginAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\LoginAdmin.aspx.designer.cs">
+      <DependentUpon>LoginAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cesta.aspx.cs">
+      <DependentUpon>Cesta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cesta.aspx.designer.cs">
+      <DependentUpon>Cesta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="descmerchan.aspx.cs">
+      <DependentUpon>descmerchan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="descmerchan.aspx.designer.cs">
+      <DependentUpon>descmerchan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="descmusic.aspx.cs">
+      <DependentUpon>descmusic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="descmusic.aspx.designer.cs">
+      <DependentUpon>descmusic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="descpeli.aspx.cs">
+      <DependentUpon>descpeli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="descpeli.aspx.designer.cs">
+      <DependentUpon>descpeli.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="descvideo.aspx.cs">
+      <DependentUpon>descvideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="descvideo.aspx.designer.cs">
+      <DependentUpon>descvideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchan.aspx.cs">
+      <DependentUpon>Merchan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchan.aspx.designer.cs">
+      <DependentUpon>Merchan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Musica.aspx.cs">
+      <DependentUpon>Musica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Musica.aspx.designer.cs">
+      <DependentUpon>Musica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pelis.aspx.cs">
+      <DependentUpon>Pelis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pelis.aspx.designer.cs">
+      <DependentUpon>Pelis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Videojuegos.aspx.cs">
+      <DependentUpon>Videojuegos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Videojuegos.aspx.designer.cs">
+      <DependentUpon>Videojuegos.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InariPlaysLibrary\InariPlaysLibrary.csproj">
+      <Project>{175063AC-CBDD-4FBD-A23A-A35E1B97AF7D}</Project>
+      <Name>InariPlaysLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Images\Thumbs.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5098</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

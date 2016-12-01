@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="InariPlaysGenNHibernate"
+		                   namespace="InariPlaysGenNHibernate.EN.Prueba">
+			<class name="ClienteEN" table="[Cliente]">
+						<id name="NIF" column="[NIF]"/>
+					<property name="Nombre" type="string"> 
+						<column name="[nombre]"  not-null="true"/>
+					</property>
+					<property name="Email" type="string"> 
+						<column name="[email]"  not-null="true"/>
+					</property>
+					<property name="Password" type="string"> 
+						<column name="[password]"  not-null="true"/>
+					</property>
+					<property name="Apellidos" type="string"> 
+						<column name="[apellidos]"  not-null="true"/>
+					</property>
+					<property name="Direccion" type="string"> 
+						<column name="[direccion]"  not-null="true"/>
+					</property>
+					<property name="Telefono" type="string"> 
+						<column name="[telefono]"  not-null="true"/>
+					</property>
+					<property name="Cp" type="integer"> 
+						<column name="[cp]"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		  			
+						<bag name="Pedido" >
+							<key>
+								<column name="[FK_NIF_idCliente]"/>
+					      	</key>
+							<one-to-many class="InariPlaysGenNHibernate.EN.Prueba.PedidoEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="Cesta" >
+							<key>
+								<column name="[FK_NIF_idCliente]"/>
+					      	</key>
+							<one-to-many class="InariPlaysGenNHibernate.EN.Prueba.CestaEN"/>
+					    </bag>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		  </class>
+		  
+		  <query name="ClienteENReadAllHQL">from ClienteEN</query>
+		</hibernate-mapping>
+	
